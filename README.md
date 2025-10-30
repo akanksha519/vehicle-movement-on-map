@@ -7,7 +7,7 @@ Built with **React.js** and **Leaflet**, this project demonstrates real-time pos
 
 ## 🌐 Live Demo
 
-👉 [View Deployed App](https://your-vercel-deployment-link.vercel.app)
+👉 [View Deployed App](https://vehicle-movement-on-map-drlt.vercel.app/)
 
 ---
 ## 🧩 Features
