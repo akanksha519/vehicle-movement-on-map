@@ -138,7 +138,7 @@ const MapView = () => {
 
   return (
     <div style={{ textAlign: "center", padding: "10px" }}>
-      <h2>🚗 Vehicle Route Simulation (India Route)</h2>
+      
 
       <Controls
         isPaused={isPaused}
