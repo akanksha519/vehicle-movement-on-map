@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# 🚗 Vehicle Route Simulation (React + Leaflet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A frontend-only web application that **simulates a moving vehicle on a live map** using dummy GPS data.  
+Built with **React.js** and **Leaflet**, this project demonstrates real-time position updates, smooth animations, and route visualization.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌐 Live Demo
 
-### `npm start`
+👉 [View Deployed App](https://your-vercel-deployment-link.vercel.app)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
+## 🧩 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+✅ **Interactive Map** using [Leaflet.js](https://leafletjs.com)  
+✅ **Polyline Route Visualization** – displays the vehicle’s full route  
+✅ **Smooth Real-Time Animation** between route points  
+✅ **Play / Pause / Restart Controls**  
+✅ **Dynamic Speed Control**  
+✅ **Vehicle Info Panel** showing:
+- Current latitude & longitude
+- Elapsed simulation time
+- Current speed  
 
-### `npm test`
+✅ **Responsive UI** – works on desktop & mobile  
+✅ **Uses Google’s Polyline Utility** for encoded route data  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🗺️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Category | Technology |
+|-----------|-------------|
+| **Frontend** | React.js, JavaScript (ES6+) |
+| **Map Library** | Leaflet.js |
+| **Styling** | CSS |
+| **Data** | Local static JSON (`routeData.js` or `dummy-route.json`) |
+| **Build Tool** | Create React App |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📂 Folder Structure
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+vehicle-movement-on-map/
+│
+├── src/
+│ ├── components/
+│ │ ├── MapView.js
+│ │ ├── Controls.js
+│ │ ├── InfoPanel.js
+│ │ ├── GradientPolyline.js
+│ │ └── MapController.js
+│ ├── data/
+│ │ └── routeData.js
+│ ├── App.js
+│ ├── index.js
+│ └── styles.css
+│
+└── package.json
